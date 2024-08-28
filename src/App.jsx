@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import './index.css'
 import './App.css'
-import {NavBar} from './components/NavBar';
+import {Index} from './components/Index.jsx';
 import {Home} from './components/Home.jsx'
 import {About} from './components/About.jsx'
 import { Contact } from './components/Contact.jsx';
@@ -18,7 +18,7 @@ function App() {
   return (
     <>
         <Router>
-          <NavBar />
+          <Index />
           <Routes>
             <Route exact path="/" element={<Home />} /> 
             <Route exact path="/about" element={<About />} />
